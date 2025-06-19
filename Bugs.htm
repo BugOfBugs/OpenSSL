@@ -1,14 +1,176 @@
-<html><body><dl>
-<dt><a href="https://github.com/openssl/openssl/issues/21643#issuecomment-1664927017">https://github.com/openssl/openssl/issues/21643#issuecomment-1664927017</a></dt>
+<html><body>Copy<br><a href="https://github.com/BugOfBugs/OpenSSL/discussions/4">https://github.com/BugOfBugs/OpenSSL/discussions/4</a><br>
+for convenient view
+
+<p>Discussion how to render <abbr title="hyper text markup language">HTML</abbr>, rather than view source:<br>
+<a href="https://github.com/orgs/community/discussions/109580">https://github.com/orgs/community/discussions/109580</a><br>
+That is why make this copy.<br>
+There I noted how <acronym>OpenSSL</acronym> behaves.<br>
+That is how <a href="#pander">deranged man found that <i>@OpenSSL</i> dislikes me too, and knew to invite them</a>.</p>
+
+In November 2024 <i>@OpenSSL</i> did <b>negotiate</b> with me. But 1 <code>member</code>.
+
+<p><b>Ignored</b> essence:<br>
+<code>spam</code>, <code>abuse</code>, <code>off-topic</code>, <code>outdated</code>, <code>resolved</code>, <code>deleted</code>. Need to <b>restore</b> my comments, and punish who <b>hid</b> them.<br>
+<b>They abused</b> me. Not I them. Called <q>troll</q>, <q>spam</q>, and as above.<br>
+Need to <b>select</b> <code>members</code> on <b>merit</b>. Rid of who <b>ignores</b> discussions.<br>
+They <b>create bugs</b>, <b>deliberately</b>.<br>
+<b>Discussion</b>. Did not read.<br>
+Did not read even <b>&frac12; negotiation</b> itself.</p>
+
+<p><i>@OpenSSL</i> <b>considered</b> only <b>nonsense</b>:<br>
+Took <b>personal offense</b>. That is why <b>ignored me</b>, <b>refuse</b> to read <b>arguments</b>.<br>
+<b>Ordered</b> me to <b>cease</b> <q>attack</q>.<br>
+Complained as if my requests to them, as above, are <b>orders</b>.<br>
+<b>Forbade</b> <b>links</b> in <b>arguments</b>.<br>
+Did <b>not specify</b> what is <q>attack</q>, <b>link</b>. No proof. Perhaps because to themselves too forbid argument by links to proof.<br>
+<b>Forbade</b> <q>calling things</q>. Yet kept doing this themselves. To call (<i>name</i>) is part of language. They forbid language.<br>
+In discussion <b>heeded</b> only <b>abusers</b>. Used as excuse, <b>endorsement</b> of corruption. Did not read me. Do not know that I <b>proved</b> them <b>wrong</b>.<br>
+Referred to sole <a href="#pander">invitation from outside <i>@OpenSSL</i> to ally against me by deranged panderer</a>. Did not specify what his complaint is, why agree. <i>You also find him by link above.</i><br>
+<b>Refused</b> to <b>remove</b> <a href="https://github.com/t8m">@t8m</a> from <i>@OpenSSL</i>, merely because <b>quantity</b> of his code is <b>large</b>. <b>Not</b> on <b>merit</b>. They <b>deliberately</b> code <b>lots</b> of junk to appear good. It is even better if later another code <b>overwrites</b>. So, nobody notices junk.<br>
+<b>Refused</b> to <b>ban</b> <a href="https://github.com/martinschmatz">@martinschmatz</a>, <a href="https://github.com/ajbozarth">@ajbozarth</a> because they are not members of <i>@OpenSSL</i>. Membership does not matter. Strangers, <b>incompetent</b> are free to code (<i><b>bug</b></i>).</p>
+
+<p><i>@OpenSSL</i> <b>remains corrupt</b>, stubbornly, deliberately. <b>Preserve bugs</b>, and make <b>new</b>.<br>
+<b>Purpose</b>: make communication <b>vulnerable</b> to <b>eavesdrop</b>.<br>
+<a href="https://github.com/openssl/openssl/issues/21633#issuecomment-2455574751">@t8m means nothing wrong to <b>ignore</b>, and <b>delete</b> discussion, yet to proceed with new code ("<i>pull</i>").</a></p>
+
+Bugs:
+<ul><li><code>OPENSSL_TLS_SECURITY_LEVEL</code>, <code>@SECLEVEL</code>, <code>-auth_level</code>. Was 1. Now 2. Implicit. <b>Rejects</b> certificate, connection. <b>Misleads</b> in report of error. Causes <b>less security</b>. Client connects without encryption out of desperation.<br>
+Must <b>abolish</b>.<br>
+<a href="https://github.com/openssl/openssl/issues/19867">https://github.com/openssl/openssl/issues/19867</a><br>
+Overly long reasons:<br>
+<a href="https://github.com/openssl/openssl/issues/11702">https://github.com/openssl/openssl/issues/11702</a><br>
+At least make <b>default <i><samp>0</samp></i></b>.<br>
+Then <b>nothing</b> would <b>break</b>.<br>
+<a href="https://github.com/openssl/openssl/issues/15335#issuecomment-2162045707">@OpenSSL intends to <b>abolish TLS1</b>, and impose <b>hidden</b> (<i>implicit</i>) <b>limit</b>, further <b>break</b> old <b>configuration</b>.</a>
+
+<p>Level other than <val>0</val> prohibits <acronym>SHA1</acronym>. <b>Rejects</b> old <b>certificates</b>. Does not mention this cause. Makes believe cause is communication.<br>
+<acronym>SHA1</acronym> is default in <acronym>OpenSSL1</acronym> for <b>certificates</b>.<br>
+<acronym>OpenSSL3</acronym> - <acronym>SHA256</acronym>.<br>
+<b>Prohibits <acronym>SSL2</acronym></b> by <b>intent</b>. Also <b><acronym>SSL3</acronym>, <acronym>TLS1</acronym>, <acronym>TLS1.1</acronym></b> as a <b>bug</b>.<br>
+Causes misleading reports: <code>SSL_R_NO_SUITABLE_SIGNATURE_ALGORITHM</code>, <code>SSL_R_CA_MD_TOO_WEAK</code>, <code>SSL_R_TLSV1_ALERT_INTERNAL_ERROR</code>.<br>
+<dfn>MD</dfn> means message digest.<br>
+<a href="https://github.com/openssl/openssl/blob/master/include/openssl/sslerr.h">include/openssl/sslerr.h</a><br>
+<b>Real causes</b>:<br>
+prohibition by <code>OPENSSL_TLS_SECURITY_LEVEL</code>,<br>
+<b>old certificate</b> with <acronym>SHA1</acronym>.<br>
+Not communication, as the errors might mislead user.</p>
+
+<p>Even if you remake old <b>certificates</b> to <acronym>SHA256</acronym>, <code>OPENSSL_TLS_SECURITY_LEVEL</code> may still reject communication, if client, or server is supposedly "<i>weak</i>".<br>
+<b>Level <val>0</val></b> allows <b>most choice</b>.<br>
+If you want greater secrecy, you may <b>exclude ciphers</b> on your own, and <b>warn</b> client, or server.<br>
+You may <b>not</b> be able to <b>warn</b> at level <val>1</val> or greater, as <acronym>OpenSSL3</acronym> <b>breaks communication</b>.</p>
+
+<h1>Workaround</h1>
+
+My lesson:<br>
+<a href="https://github.com/openssl/openssl/issues/21643#issuecomment-1664927017">https://github.com/openssl/openssl/issues/21643#issuecomment-1664927017</a>
+
+<p>In source code <a href="https://github.com/openssl/openssl/blob/master/include/openssl/tls1.h">include/openssl/tls1.h</a></u>:<br>
+<code>define OPENSSL_TLS_SECURITY_LEVEL 0</code><br>
+Comment there suggests you may set it in compiler (<i>override</i>), instead.</p>
+
+<p>On command line:<br>
+<code>openssl ciphers -s -V "@SECLEVEL=0:ALL:eNULL"</code><br>
+<code>s_server -auth_level 0 -cipher "@SECLEVEL=0:ALL:eNULL" ...</code></p>
+
+<p>In <u><var>openssl.cnf</var></u> create chain of sections:<br>
+<code>openssl_conf/ssl_conf/system_default</code><br>
+In <code>system_default</code>:<br>
+<code>CipherString=@SECLEVEL=0:ALL:eNULL</code></p>
+
+<p><b>Web server</b> <i><acronym>Apache</acronym></i>, in <u><var>httpd.conf</var></u>. "<i>Global</i>" scope, or separate for each <var>VirtualHost</var>:<br>
+<code>SSLCipherSuite @SECLEVEL=0:ALL:eNULL</code><br>
+Do not confuse with <var>Ciphersuites</var> in <u><var>openssl.cnf</var></u>. <code>@SECLEVEL=0</code> in that does not work. <var>Ciphersuites</var> is only about <abbr title="transport layer security; variant of secure sockets layer SSL">TLS1.3</abbr>. Not <var>@SECLEVEL</var>. So far...<br>
+Here it is separate variable. Perhaps sets <u><var>CipherString</var></u>.<br>
+<i><acronym>Apache</acronym></i> <b>overrides</b> <u><var>openssl.cnf</var></u> <b>always</b>.
+Does not leave as is. If you set <var>SSLCipherSuite</var>, uses that.<br>
+Default seems to omit <var>@SECLEVEL</var>. Then <acronym>OpenSSL3</acronym> perhaps resets to default,
+rather than per <u><var>openssl.cnf</var></u>.</p>
+</li>
+<li>Order of <code>key_share</code> as <b>preference</b> of <code>supported_groups</code>.<br>
+Rather must be order of <code>supported_groups</code>.<br>
+<code>key_share</code> applies only since <abbr title="transport layer security; variant of secure sockets layer SSL">TLS1.3</abbr>. Not earlier.<br>
+<i>@OpenSSL</i> keeps the bug. Avoids mention of it. <b>Ignores</b> reminders. 2 issues intend to <b>preserve bug</b>:<br>
+<a href="https://github.com/openssl/openssl/issues/21633">https://github.com/openssl/openssl/issues/21633</a> - make possible multiple <code>key_share</code>.<br>
+<a href="https://github.com/openssl/openssl/issues/22203">https://github.com/openssl/openssl/issues/22203</a> - make <b>post-quantum</b> form of <code>key_share</code> and <code>supported_groups</code>.<br>
+Both intend to alter the same code, race, overwrite one another. If one removes bug, another remakes it.
+<i>@OpenSSL</i> <a href="https://github.com/openssl/openssl/issues/22203#issuecomment-2453592866"><b>hid</b> my warning about this</a>, under false mark <code>spam</code>.<br>
+<a href="https://github.com/openssl/openssl/issues/22203#issuecomment-2711932340"><b>Hid</b> my reminder, objection to intent to <b>close</b> the issue</a>, under false mark <code>outdated</code>. <b>All</b> other comments become <b>outdated</b>, when one supposedly <b>solves</b> issue. Instead, should hide them. If does <b>not hide</b>, then this means <b>not solved</b>. Must <b>not close</b>.<br>
+Probably it is <a href="https://github.com/vdukhovni">@vdukhovni</a>, who hid my comments.<br>
+Promptly he <a href="https://github.com/openssl/openssl/issues/22203#event-16662460882"><b>closed</b> issue</a> on <b>false</b> pretence as if <code>completed</code>.
+
+<p>2 "<i>pulls</i>" on issue <i>#21633</i>. Each again with <b>separate discussion</b>. Though "<i><b>pull</b></i>" is only for <b>implementation</b>, rather than discussion. Discussion must be 1. Not 4.<br>
+<a href="https://github.com/openssl/openssl/pull/25605">25605</a> abandoned for faults<br>
+<a href="https://github.com/openssl/openssl/pull/26445">26445</a> committed. Made bug. <a href="https://github.com/openssl/openssl/commit/d69c014608acdfa37839d49412e6d6974ac539a0">Lie as if <q>concluded discussion</q>.</a> Actually, <b>ignored</b>. Pretend to implement <q>draft</q> <i>#25605</i>. Actually, fault. Implement not that. Rather <i>#26445</i>. Lie as if there explain <q>expected behaviour</q>. Actually, wondered that do <b>not know</b> how <b>old</b>, and <b>new</b> code <b>behaves</b>. Even <a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2597645202">failed to draw conclusion from tests in <i>#25605</i></a>.<br>
+<i>@OpenSSL</i> <b>hid</b> <a href="https://github.com/openssl/openssl/pull/26445#issuecomment-2667228367">my comment</a> by false mark <code>resolved</code>. They do not hide others. This means <b>did not resolve any</b>.</p>
+
+<p>Above I mention that <a href="https://github.com/openssl/openssl/issues/21633#issuecomment-2455574751">@t8m acknowledged discussion is <b>not complete</b>. Yet, proceeds with new code ("<i>pull</i>")</a>.<br>
+<b>Lies</b> as if the "<i>pull</i>" <b>enables <abbr>ML-KEM</abbr> groups</b>:<br>
+<a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2594994047">https://github.com/openssl/openssl/pull/25605#issuecomment-2594994047</a>.<br>
+<i>Issue</i>, and it's "<i>pull</i>" are only about <b>multiple <code>key_share</code></b> for groups ("<i>curves</i>"). Not about list of groups. Do not alter it.<br>
+Actually, he is correct in the sense that <b>post-quantum</b> <i>issue 22203</i> <b>races</b> for same code as <i>21633</i>. Whichever of the 2 implement <b>last</b>, retains code, <b>overwrites</b> the other. <i>@OpenSSL</i> seems to give up on <i>22203</i> in favour of <i>21633</i>. Expect no race, and maybe even no implementation of <i>22203</i> neither in itself, nor in <i>21633</i>.<br>
+But <i>@t8m</i> does <b>not realize</b> and <b>mean</b> that. Writes <b>arbitrary</b> nonsense.</p>
+
+<p><a href="https://github.com/martinschmatz">@martinschmatz</a> vowed to <b>ignore</b> arguments. No surprise that he <b>wonders</b> that test reveals that he <b>creates bug</b>:<br>
+<a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2595314628">https://github.com/openssl/openssl/pull/25605#issuecomment-2595314628</a><br>
+Original code selects wrong: <b>preference</b> by <b>server</b>. His new code selects correct
+<b>preference</b> by <b>client</b>. Does <b>not know</b> why. He <b>intended wrong</b>.<br>
+Later reported as if <b>understands</b> result of test:<br>
+<a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2595918466">https://github.com/openssl/openssl/pull/25605#issuecomment-2595918466</a><br>
+<b>Fails</b> to specify. Wastes our time. Spams.<br>
+<a href="https://github.com/t8m">@t8m</a>, as if unaware of my warnings, wonders <b>whether</b> at all original provided <b>preference</b> by <b>client</b>:<br>
+<a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2595492584">https://github.com/openssl/openssl/pull/25605#issuecomment-2595492584</a><br>
+Suggests to <q>drop that thing</q>. Fails to specify what. - "<i>Pull</i>"? Preference?
+<i>Last</i> sentence about intent to <q>implement it</q> is <b>incomprehensible</b>. Maybe <b>contradicts</b> <i>1st</i>.
+<i>1st</i> doubts preference. <i>Last</i> - asserts <q>it</q>.<br>
+<a href="https://github.com/vdukhovni">@vdukhovni</a> can not reproduce report by <i>@martinschmatz</i>:<br>
+<a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2595714541">https://github.com/openssl/openssl/pull/25605#issuecomment-2595714541</a><br>
+Fails to specify what <b>preference</b> his test implies: by <b>client</b>, or <b>server</b>.<br>
+Seems - <b>client</b>. Not sure why. Would he test  <abbr title="transport layer security; variant of secure sockets layer SSL">TLS1.3</abbr>, we could guess that client sent <b><code>key_share</code></b> that <b>matches</b> only its <b>preference</b>.
+But he tested <abbr title="transport layer security; variant of secure sockets layer SSL">TLS1.2</abbr>.
+<code>key_share</code> is not part of it. So, do <b>not know</b> why server correctly selects what <b>client prefers</b>. Though, can infer it from discussion. If order of <code>supported_groups</code> on <i>client</i> would differ from <i>server</i>, then <i>server</i> may incorrectly <b>choose</b> <code>supported_groups</code> that <i>client</i> does <b>not prefer</b>.<br>
+When they implement <b>multiple</b> <code>key_share</code> of <abbr title="transport layer security; variant of secure sockets layer SSL">TLS1.3</abbr>, this will be more likely.<br>
+<a href="https://github.com/ghen2">@ghen2</a> <b>fails</b> to <b>realize</b> this too:<br>
+<a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2595572712">https://github.com/openssl/openssl/pull/25605#issuecomment-2595572712</a><br>
+Fails more than <a href="https://github.com/vdukhovni">@vdukhovni</a>: does not specify whether his test reproduces anyone.<br>
+<i>@martinschmatz</i>, <i>@ghen2</i>, <i>@vdukhovni</i> <b>refuse</b> to <b>read my</b> warnings that <b>order</b> of list of <code>key_share</code>, and <code>supported_groups</code> determines outcome of test:<br>
+<a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2598559777">https://github.com/openssl/openssl/pull/25605#issuecomment-2598559777</a><br>
+With <abbr title="transport layer security; variant of secure sockets layer SSL">TLS1.3</abbr>, if <i>client</i> sends <code>key_share</code> same as <code>supported_groups</code> it prefers, then <i>server</i> chooses <b>correct</b> <code>supported_groups</code>. If sends different <code>key_share</code>, then <i>server</i> chooses <b>incorrect</b> what <b><i>client</i> does not prefer</b>.<br>
+In <i>@OpenSSL</i> <i>client</i> always sends <code>key_share</code> of <code>supported_groups</code> it prefers, 1st in list. So, <b>impossible</b> to <b>test</b> with same <i>@OpenSSL</i>. Must test with <b>different</b> <i>client</i>.<br>
+Test wrong choice by mismatch of <b>order</b> of:<br>
+<code>key_share</code> - impossible;<br>
+<code>supported_groups</code> - possible.<br>
+With <abbr title="transport layer security; variant of secure sockets layer SSL">TLS1.2</abbr> <code>key_share</code> is absent. Still, <b>mismatch</b> of <b>order</b> of lists of <code>supported_groups</code> on <i>client</i> and <i>server</i> may cause <b>wrong choice</b>.<br>
+<i>@ghen2</i> <b>errs</b> naturally, because "<i><b>blocks</b></i>" me. Does <b>not</b> receive notifications of my replies that <b>solve</b> his questions. Still can <b>read</b> on @github. But <b>refuses</b>.<br>
+Bug of <i>@GitHub</i>: I do not receive notifications of him. Can not vote, or thumb him down.<br>
+In order to <b>hide confusion</b> <a href="https://github.com/t8m">@t8m</a> <b>split</b> discussion again. <b>Closed</b> the "<i>pull</i>".<br>
+<a href="https://github.com/davidkel">@davidkel</a> opened new:<br>
+<a href="https://github.com/openssl/openssl/pull/26445">https://github.com/openssl/openssl/pull/26445</a><br>
+It is possible to <b>change existing</b> "<i>pull</i>". No need for new.<br>
+Name is same as old: <b>multiple <code>key_share</code></b>. But they put into it many other.
+<b>Contradict</b> instruction by <a href="https://github.com/mattcaswell">@mattcaswell</a> to <a href="#separate">create <b>separate</b> issue for each bug</a>.</p>
+
+<p><a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2598559777">https://github.com/openssl/openssl/pull/25605#issuecomment-2598559777</a><br>
+I urged all to <b>test thoroughly</b>: vary <b>order</b> of <code>key_share</code> and <code>supported_groups</code>;<br>
+with <b>current</b> and <b>new</b> code.<br>
+So, we know whether <b>new</b> code <b>prefers different</b> <code>supported_groups</code> than <b>old</b>.<br>
+All <b>ignored</b>.<br>
+We will <b>not know effect</b> of new code.</p></li>
+<li><a href="https://github.com/openssl/openssl/issues/21633#issuecomment-2173980229">@martinschmatz <b>acknowledged</b> that they deliberately <b>create bug</b>.</a><br>
+Makes even <b>greater</b>. <b>Limits quantity</b> of <code>key_share</code> to <b>4</b>. If 5th corresponds to 1st <code>supported_groups</code>, that means <b>preferred</b>, <i>@OpenSSL</i> would ignore, and <b>fail</b> to <b>use</b> it, even if previous bug would not prevent, would not exist.<br>
+<b>Task</b> in the issue is <b>not limit</b>, rather <b>multiple <code>key_share</code></b>, as above.</li>
+</ul>
+
+<dl><dt><a href="https://github.com/openssl/openssl/issues/21643#issuecomment-1664927017" name="separate">https://github.com/openssl/openssl/issues/21643#issuecomment-1664927017</a></dt>
 <dd><a href="https://github.com/mattcaswell">@mattcaswell</a> <b>fails</b> to take even 1 <b>Bug</b> from my report.<br>
 There are <b>several</b>.<br>
-Rather, he marked <i>off topic</i> my report, and 2 consequent reminders. Later he removed the mark only from report.</dd>
+Rather, he falsely marked <code>off-topic</code> my report, and 2 consequent reminders. Later removed mark only from report.</dd>
 <dt><a href="https://github.com/openssl/openssl/issues/21633" title="Need support for multiple key share entries in ClientHello">https://github.com/openssl/openssl/issues/21633</a></dt>
-<dd><i>OpenSSL</i> deleted my comment:<br>
+<dd><i>@OpenSSL</i> deleted my comment:<br>
 <a href="https://github.com/openssl/openssl/issues/21633#event-14347936414">1</a><br>
 <a href="https://github.com/openssl/openssl/issues/21633#event-14460976057">2</a><br>
 <a href="https://github.com/openssl/openssl/issues/21633#event-14471938650">3</a><br>
-<a href="https://github.com/openssl/openssl/issues/21633#issuecomment-2387428586">4 hid by false mark "<i>off topic</i>"</a><br>
+<a href="https://github.com/openssl/openssl/issues/21633#issuecomment-2387428586">4 hid by false mark <code>off-topic</code></a><br>
 <a href="https://github.com/openssl/openssl/issues/21633#event-15022294161">5 reminder</a><br>
 5 times means <b>malice</b>.<br>
 Hiding wastes time. <a href="https://github.com/ghen2">ghen2</a> asks what I already explained: <b>configuration can separate</b> <i>client</i> and <i>server</i>.
@@ -18,40 +180,94 @@ Instead, they only change <b>limit</b> from 1 to 4.<br>
 New code <b>reasserts bug</b> that treats <code>key_share</code> as <b>priority</b>. Another "<i>issue</i>" will discard new code. Or new code will discard correct code, if that "<i>issue</i>" creates one earlier.</i></p>
 <p><a href="https://github.com/openssl/openssl/issues/21633#issuecomment-2383903564">@martinschmatz lied as if did not consider preference of <i>client</i>.</a> He did consider... But only when I noted. <b>Boasted</b> that he <b>violates</b> it.</p>
 <p><a href="https://github.com/martinschmatz">@martinschmatz</a> <b>refused</b> to <b>argue</b>. Called me names: <b>troll</b>.<br>
-Constantly <b>lies</b> as if stated something already, <b>pretends</b> what never was (<i>prefix "!"</i>), pushes unjustified <b>restrictions</b>. One such he threatened to impose on <i>OpenSSL</i>, rather than leave up to user:</p>
+Constantly <b>lies</b> as if stated something already, as if obeys preference by <i>client</i>, <b>pretends</b> what never was (<i>prefix "!"</i>), pushes unjustified <b>restrictions</b>. One such he threatened to impose on <i>OpenSSL</i>, rather than leave up to user:</p>
 <p><a href="https://github.com/openssl/openssl/issues/22203#issuecomment-2174189819">@martinschmatz mistakes demand for specification.</a></p>
-<p>Member of <i>OpenSSL</i> <a href="https://github.com/openssl/openssl/issues/21633#issuecomment-2216696477">@t8m <b>ignored</b> that he is <b>obviously</b> not fit to make code.</a></p>
+<p>Member of <i>@OpenSSL</i> <a href="https://github.com/openssl/openssl/issues/21633#issuecomment-2216696477">@t8m <b>ignored</b> that he is <b>obviously</b> not fit to make code.</a></p>
 <p><a href="https://github.com/openssl/openssl/issues/21633#issuecomment-2172613097">https://github.com/openssl/openssl/issues/21633#issuecomment-2172613097</a><br>
 <a href="https://github.com/openssl/openssl/issues/21633#issuecomment-2359871975">https://github.com/openssl/openssl/issues/21633#issuecomment-2359871975</a><br>
 <a href="https://github.com/ghen2">ghen2</a> <b>thumbs up opposing</b> opinions. <b>Not wise.</b></p>
 
 <p><a href="https://github.com/openssl/openssl/pull/25605">https://github.com/openssl/openssl/pull/25605</a><br>
-As usual, <a href="https://github.com/ajbozarth">@ajbozarth</a> <b>ignored</b>, and <b>split discussion</b>. Went on to <b>implement bug</b>.</p>
+As usual, <a href="https://github.com/ajbozarth">@ajbozarth</a> <b>ignored</b>, and <b>split discussion</b>. Went on to <b>implement bug</b>.<br>
+Above I mention that new discussion was vague, <b>bug</b>. So, they <b>abandoned</b> the "<i>pull</i>".
+<b>Split discussion</b> again, in new "<i>pull</i>":<br>
+<a href="https://github.com/openssl/openssl/pull/26445">https://github.com/openssl/openssl/pull/26445</a><br>
+Yet, claimed to continue previous "<i>pull</i>".<br>
+As usual, declared additional tasks <b>not discussed</b>, not in issue <i><b>#21633</b></i>.<br>
+For example: group of groups (<i>curves</i>). Called this <q>tuple</q>. Initially, marked by brackets <code>CIPHER:{CIPHER:CIPHER}</code>. Later - slashes <code>CIPHER/CIPHER:CIPHER</code>. Did <b>not</b> specify <b>purpose</b>.<br>
+Maybe did discuss some, vaguely, in previous "<i>pull</i>". But <b>closed</b>.<br>
+"<i>Pull</i>" is for <b>implementation</b>. Not discussion.<br>
+<b>Task</b>, and <b>discussion</b> is due in <b>issue</b>. Separate: <b>1</b> per <b>bug</b>, as <a href="#separate">@mattcaswell instructs</a>.</p>
 
-<p>There <a href="https://github.com/vdukhovni">@vdukhovni</a> 3 times deleted essential comment on false pretence of personal criticism, and repetition:<br>
+<p>There <a href="https://github.com/vdukhovni">@vdukhovni</a> 3 times <a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2451043009">deleted essential comment</a> on false pretense of personal criticism, and repetition:<br>
 <a href="https://github.com/openssl/openssl/pull/25605#event-15051225252">1</a><br>
 <a href="https://github.com/openssl/openssl/pull/25605#event-15055521015">2</a><br>
-<a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2453646185">3 hid by false mark "<i>abuse</i>"</a><br>
+<a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2453646185">3 hid by false mark <code>abuse</code></a><br>
 Did not hide that he is culprit, who deletes.<br>
 <b>Prohibits</b> word "<i><b>you</b></i>";<br>
 <b>repetition</b>.</p>
 
-<p>False mark "<i>abuse</i>" on not essential, criticism:<br>
+<p>False mark <code>abuse</code> on not essential, criticism:<br>
 <a href="https://github.com/openssl/openssl/pull/25605#issuecomment-2455531712">1</a></p>
 
 <p>False mark "<i>spam</i>" on essential notice that <a href="https://github.com/ajbozarth">@ajbozarth</a>, <a href="https://github.com/martinschmatz">@martinschmatz</a>, <a href="https://github.com/t8m">@t8m</a> race to conflict in code:<br>
 <a href="https://github.com/openssl/openssl/issues/22203#issuecomment-2453592866">https://github.com/openssl/openssl/issues/22203#issuecomment-2453592866</a></p>
+
+<p><a href="https://github.com/t8m">@t8m</a> <b>blatantly lied</b> as if they had <q>working proposal</q> for <code>SSL_OP_CIPHER_SERVER_PREFERENCE</code>. Actually, it <b>already</b> exists. No need for proposal.<br>
+<a href="https://github.com/martinschmatz">@martinschmatz</a> <b>blatantly lied</b> as if @OpenSSL treats <code>supported_groups</code> of <i>client</i> in order of <b>preference</b>:<br>
+<a href="https://github.com/openssl/openssl/issues/22203#issuecomment-2550259852">https://github.com/openssl/openssl/issues/22203#issuecomment-2550259852</a><br>
+Actually it, and they deliberately <b>mistake <code>key_share</code></b>.<br>
+False mark <code>abuse</code> on essential report about this.</p>
+
+<p><a href="https://github.com/t8m">@t8m</a> suggests <b>nonsense</b>:<br>
+<a href="https://github.com/openssl/openssl/pull/26445#issuecomment-2602467981">https://github.com/openssl/openssl/pull/26445#issuecomment-2602467981</a><br>
+<q><code>A:B:{C:D}</code> should be interpreted as <code>{A:B}:{C:D}</code><br>
+<code>{A:B}:C</code> should trigger error</q><br>
+List of ciphers should be valid in any form. Should not infer more than it specifies.<br>
+Contradiction: absent brackets in one list should be <b>same</b> error in another.</p>
+
+<p><a href="https://github.com/mattcaswell">@mattcaswell</a> <b>contradicts</b>:<br>
+<a href="https://github.com/openssl/openssl/pull/26445%23issuecomment-2602537833">https://github.com/openssl/openssl/pull/26445%23issuecomment-2602537833</a><br>
+<b>Absence</b> of brackets is <b>not error</b>. Yet, simultaneously, timidly agrees as if it is.</p>
+
+<p><a href="https://github.com/vdukhovni">@vdukhovni</a> writes vaguely:<br>
+<a href="https://github.com/openssl/openssl/pull/26445#issuecomment-2602580094">https://github.com/openssl/openssl/pull/26445#issuecomment-2602580094</a><br>
+With effort you infer what he means. <b>Contradicts</b> himself as if this would be <b>valid</b> syntax:<br>
+<q><code>DEFAULT:{A:B:C}</code></q><br>
+Simultaneously, timidly, calls this <b>error</b>.<br>
+Calls this 2 groups. Though, there are 4, or even more, if we count what <code>DEFAULT</code> expands to. Groups within brackets are still groups. Brackets are <b>not group</b>. Rather, they are group of groups (<i>curves</i>).</p>
+
+<p><i>@<acronym>OpenSSL</acronym></i> is too <b>lazy</b> to code. That is why they do nothing. Prefer to wait till someone else does. Let outsiders code. Yet, those - <a href="https://github.com/ajbozarth">@ajbozarth</a>, <a href="https://github.com/martinschmatz">@martinschmatz</a>, <a href="https://github.com/davidkel">@davidkel</a> - pretend to be <b>incompetent</b>. Compell <a href="https://github.com/mattcaswell">@mattcaswell</a> and <a href="https://github.com/vdukhovni">@vdukhovni</a> to constantly <b>correct</b> their mistakes, to involuntarily <b>code</b> in their <b>stead</b>.<br>
+<i>@<acronym>OpenSSL</acronym></i> intended to save time. Instead, constantly waste it, mentor how to code.</p>
+
+<p><b>Extensive mentoring</b> and <b>nonsense</b> means they are <b>not reliable</b>.
+Supervisors may miss <b>many errors</b>. They may <b>remain</b> in new code. Maybe <b>deliberate</b>, rather than mistakes.</p>
 </dd>
 <dt><a href="https://github.com/openssl/project/issues/750#issuecomment-2246719029">https://github.com/openssl/project/issues/750#issuecomment-2246719029</a></dt>
 <dd><i>@t8m</i> is corrupt. Introduced requirement of <code>no-deprecated</code>. We did <b>not discuss</b> it.
-Then justified as if we can always <b>redefine</b> anything that we argue.<br>
+Justified as if we can always <b>redefine</b> anything that we argue.<br>
 Instead, should apologize, and retract proposal.
 <p>He urged to create 1 more, <b>separate discussion</b>. <b>Avoids</b> mention of <b>existing</b> 2 discussions - this and original.<br>
 <a href="https://github.com/nhorman">@nhorman</a> obeyed. And exceeded: created 3 more discussions.
 Failed to link to previous discussions. Without reason <b>closed</b> this one.<br>
-The 5th discussion does <b>not</b> even <b>exist</b>. Or perhaps <b>secret</b>, <i><b>private</b></i>:<br>
+5th discussion does <b>not</b> even <b>exist</b>. Or perhaps <b>secret</b>, <i><b>private</b></i>:<br>
 <a href="https://github.com/openssl/private/issues/638">https://github.com/openssl/private/issues/638</a></p></dd>
 <dt><a href="https://github.com/openssl/openssl/issues/15335#issuecomment-2203721343">https://github.com/openssl/openssl/issues/15335#issuecomment-2203721343</a></dt>
 <dd><i>@t8m</i> created <b>trivial</b> project.
 Should not create one for everything that <b>works</b>.</dd>
+<dt><a href="https://github.com/openssl/openssl/issues/19867#issuecomment-2475188122">https://github.com/openssl/openssl/issues/19867#issuecomment-2475188122</a></dt>
+<dd><b>Closed</b> "<i>bug</i>". Did <b>not solve</b>.<br>
+Suggested <b>wrong</b>: not to connect. - User should decide. Not maker.<br>
+<b>Deleted</b> my <b>advice</b>. I restored. <i>@OpenSSL</i> <b>hid</b> by false mark <code>abuse</code>.</dd>
+<dt><i>@OpenSSL</i> <b>fails</b> to <b>delete real spam</b></dt>
+<dd>My comments remain hidden. Spam shows beside.
+<p>In unrelated discussion I wrote that <i>@OpenSSL</i> deletes me.<br>
+One participant got angry that I thwarted his fantasies on other issues.
+Reported me for do not know what to <i>@GitHub</i>, and <i>@OpenSSL</i> in discussion, where <a href="https://github.com/t8m">@t8m</a> called me spam:<br>
+<a href="https://github.com/openssl/openssl/issues/21633#issuecomment-2458393861" name="pander">https://github.com/openssl/openssl/issues/21633#issuecomment-2458393861</a><br>
+I warned him not <b>pander to aggressor</b>. He took it even further, regardless.<br>
+Called me spam too. Upset that I reply to every his reply to me. He wants to be the only one, who replies.<br>
+@RokeJulianLockhart popped up also below. In matters <acronym>OpenSSL</acronym> he is nobody, stranger, passer by my invitation, provocateur.<br>
+In negotiation with me <i>@OpenSSL</i> <b>rejoiced</b> that they are not alone. Outsiders agree with them too. Although he is but 1.
+<i>Links at the beginning, above.</i></p></dd>
 </dl></body></html>
